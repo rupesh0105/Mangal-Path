@@ -1,0 +1,104 @@
+{
+  "shiva": {
+    "name": "भगवान शिव",
+    "description": "संहारक, परम तपस्वी",
+    "texts": [
+      { "title": "शिव चालीसा", "file": "shiv_chalisa.txt" },
+      { "title": "शिव आरती", "file": "shiv_aarti.txt" },
+      { "title": "शिव तांडव स्तोत्रम्", "file": "shiv_tandav_stotram.txt" },
+      { "title": "रुद्राष्टकम्", "file": "rudrashtakam.txt" },
+      { "title": "लिङ्गाष्टकम्", "file": "lingashtakam.txt" }
+    ]
+  },
+  "vishnu": {
+    "name": "भगवान विष्णु",
+    "description": "ब्रह्मांड के संरक्षक और पालक",
+    "texts": [
+      { "title": "विष्णु चालीसा", "file": "vishnu_chalisa.txt" },
+      { "title": "विष्णु आरती", "file": "vishnu_aarti.txt" },
+      { "title": "विष्णु अष्टकम्", "file": "vishnu_ashtakam.txt" }
+    ]
+  },
+  "krishna": {
+    "name": "भगवान कृष्ण",
+    "description": "परम पुरुषोत्तम भगवान",
+    "texts": [
+      { "title": "कृष्ण चालीसा", "file": "krishna_chalisa.txt" },
+      { "title": "कृष्ण आरती", "file": "krishna_aarti.txt" },
+      { "title": "मधुराष्टकम्", "file": "madhurashtakam.txt" },
+      { "title": "गोविन्दम् अष्टकम्", "file": "govindam_ashtakam.txt" },
+      { "title": "विनय पचासा", "file": "vinay_pachasa.txt" }
+    ]
+  },
+  "rama": {
+    "name": "भगवान राम",
+    "description": "धर्म और सदाचार की प्रतिमूर्ति",
+    "texts": [
+      { "title": "राम चालीसा", "file": "ram_chalisa.txt" },
+      { "title": "राम आरती", "file": "ram_aarti.txt" },
+      { "title": "राम रक्षा स्तोत्र", "file": "ram_raksha_stotra.txt" },
+      { "title": "रघुपति राघव (भजन)", "file": "raghupati_raghav.txt" }
+    ]
+  },
+  "hanuman": {
+    "name": "हनुमान जी",
+    "description": "शक्ति, भक्ति और निस्वार्थ सेवा के प्रतीक",
+    "texts": [
+      { "title": "हनुमान चालीसा", "file": "hanuman_chalisa.txt" },
+      { "title": "हनुमान आरती", "file": "hanuman_aarti.txt" },
+      { "title": "बजरंग बाण", "file": "bajrang_baan.txt" },
+      { "title": "हनुमान अष्टक", "file": "hanuman_ashtak.txt" },
+      { "title": "संकट मोचन हनुमान अष्टक", "file": "sankat_mochan.txt" },
+      { "title": "सुंदर कांड", "file": "sundar_kand.txt" }
+    ]
+  },
+  "durga": {
+    "name": "देवी दुर्गा",
+    "description": "दिव्य माँ, शक्ति का अवतार",
+    "texts": [
+      { "title": "दुर्गा चालीसा", "file": "durga_chalisa.txt" },
+      { "title": "दुर्गा आरती", "file": "durga_aarti.txt" },
+      { "title": "दुर्गा अष्टोत्तर", "file": "durga_ashtottara.txt" },
+      { "title": "अर्गला स्तोत्रम्", "file": "argala_stotram.txt" }
+    ]
+  },
+  "lakshmi": {
+    "name": "देवी लक्ष्मी",
+    "description": "धन, भाग्य और समृद्धि की देवी",
+    "texts": [
+      { "title": "लक्ष्मी चालीसा", "file": "lakshmi_chalisa.txt" },
+      { "title": "लक्ष्मी आरती", "file": "lakshmi_aarti.txt" },
+      { "title": "लक्ष्मी अष्टकम्", "file": "lakshmi_ashtakam.txt" },
+      { "title": "कनकधारा स्तोत्र", "file": "kanakadhara_stotra.txt" }
+    ]
+  },
+  "saraswati": {
+    "name": "देवी सरस्वती",
+    "description": "ज्ञान, संगीत, कला और विद्या की देवी",
+    "texts": [
+      { "title": "सरस्वती चालीसा", "file": "saraswati_chalisa.txt" },
+      { "title": "सरस्वती आरती", "file": "saraswati_aarti.txt" },
+      { "title": "सरस्वती वंदना", "file": "saraswati_vandana.txt" },
+      { "title": "सरस्वती अष्टकम्", "file": "saraswati_ashtakam.txt" }
+    ]
+  },
+  "ganesha": {
+    "name": "भगवान गणेश",
+    "description": "विघ्नहर्ता, शुभ आरंभ के देवता",
+    "texts": [
+      { "title": "गणेश चालीसा", "file": "ganesh_chalisa.txt" },
+      { "title": "गणेश आरती", "file": "ganesh_aarti.txt" },
+      { "title": "गणेश अथर्वशीर्ष", "file": "ganesh_atharvashirsha.txt" },
+      { "title": "संकट नाशन गणेश स्तोत्र", "file": "sankat_nashan_stotra.txt" }
+    ]
+  },
+  "kartikeya": {
+    "name": "भगवान कार्तिकेय",
+    "description": "देवताओं के सेनापति और युद्ध के देवता",
+    "texts": [
+      { "title": "कार्तिकेय चालीसा", "file": "kartikeya_chalisa.txt" },
+      { "title": "कार्तिकेय आरती", "file": "kartikeya_aarti.txt" },
+      { "title": "स्कन्द षष्ठी कवचम्", "file": "skanda_shashti_kavacham.txt" }
+    ]
+  }
+}

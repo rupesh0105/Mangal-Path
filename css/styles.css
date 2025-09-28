@@ -1,0 +1,364 @@
+/* --- Sacred Temple Theme --- */
+
+/* 1. Google Font Imports for a Devotional Feel */
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@500;700&family=Hind:wght@400;600&display=swap');
+
+/* 2. Root Variables: The Colors of Dharma */
+:root {
+    --bg-color: #FBF5E8;
+    /* Aged parchment background */
+    --bg-image: url('https://www.transparenttextures.com/patterns/old-wall.png');
+    /* Subtle texture */
+    --primary-color: #8C1C13;
+    /* Deep, temple maroon */
+    --secondary-color: #CF5C36;
+    /* Sacred saffron/orange */
+    --accent-color: #D4AF37;
+    /* Divine gold for highlights */
+    --text-color: #3D2B1F;
+    /* Earthy brown, like ink on a scroll */
+    --card-bg-color: rgba(255, 255, 255, 0.5);
+    /* Faintly transparent card */
+    --heading-font: 'Laila', serif;
+    /* A font with a traditional feel */
+    --body-font: 'Hind', sans-serif;
+    /* A clear, readable Devanagari-style font */
+    --border-color: #D2B48C;
+    /* Tan border, like old paper */
+    --shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    --border-radius: 5px;
+}
+
+/* 3. General Body & Sacred Typography */
+body {
+    font-family: var(--body-font);
+    background-color: var(--bg-color);
+    background-image: var(--bg-image);
+    /* Applying the texture */
+    color: var(--text-color);
+    margin: 0;
+    line-height: 1.8;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* 4. Header & Footer: The Temple Entrance */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    border-bottom: 5px solid var(--accent-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 3.5rem;
+    color: #FFFAF0;
+    /* Floral white */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.1rem;
+    color: #F5DEB3;
+    /* Wheat color */
+    opacity: 0.9;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-top: 2px solid var(--border-color);
+    font-size: 0.9rem;
+    color: #6B4423;
+}
+
+.quote-card {
+    margin-bottom: 2rem;
+    /* mb-8 */
+    padding: 1.5rem;
+    /* p-6 */
+    border-radius: 1rem;
+    /* rounded-2xl */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    /* shadow-lg */
+    text-align: center;
+    /* text-center */
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.2s;
+    /* delay-1 */
+    opacity: 0;
+}
+
+.quote-card h2 {
+    font-size: 1.5rem;
+    /* text-2xl */
+    font-weight: 600;
+    /* font-semibold */
+    margin-bottom: 0.5rem;
+    /* mb-2 */
+}
+
+#daily-quote {
+    font-size: 1.125rem;
+    /* text-lg */
+    font-style: italic;
+    /* italic */
+    line-height: 1.625rem;
+    /* leading-relaxed */
+}
+
+#quote-meaning {
+    font-size: 1rem;
+    /* text-md */
+    margin-top: 1rem;
+    /* mt-4 */
+    opacity: 0.9;
+    /* opacity-90 */
+}
+
+/* Animation for fade-in-up */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+/* 5. Homepage Grid: Carved Stone Plaques */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.deity-card {
+    background: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    text-align: center;
+    padding: 2rem 1.5rem;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(2px);
+    /* Frosted glass effect */
+}
+
+.deity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-color: var(--accent-color);
+}
+
+.deity-card h3 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.deity-card p {
+    font-size: 1rem;
+    color: #6B4423;
+    /* Darker brown */
+}
+
+/* 6. Deity Page: The Scripture Viewer */
+.back-link {
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-family: var(--heading-font);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    transition: color 0.3s;
+}
+
+.back-link:hover {
+    color: var(--secondary-color);
+}
+
+.deity-page-container {
+    display: flex;
+    max-width: 1300px;
+    margin: 2rem auto;
+    gap: 2.5rem;
+    padding: 0 1.5rem;
+    align-items: flex-start;
+}
+
+#text-list-container {
+    flex: 0 0 320px;
+    background: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 30px;
+    backdrop-filter: blur(2px);
+}
+
+#text-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#text-list li {
+    padding: 0.9rem 1rem;
+    border-bottom: 1px solid rgba(210, 180, 140, 0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #6B4423;
+}
+
+#text-list li:last-child {
+    border-bottom: none;
+}
+
+#text-list li:hover {
+    background-color: rgba(210, 180, 140, 0.2);
+}
+
+#text-list li.active {
+    background-color: var(--accent-color);
+    color: #3D2B1F;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(212, 175, 55, 0.5);
+    border-color: var(--accent-color);
+}
+
+#content-display-container {
+    flex: 1;
+    background: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    padding: 2.5rem 3rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    min-height: 500px;
+    backdrop-filter: blur(2px);
+}
+
+#text-title {
+    font-family: var(--heading-font);
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 2.2rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--border-color);
+    font-weight: 700;
+}
+
+#content-display {
+    white-space: pre-wrap;
+    font-size: 1.2rem;
+    line-height: 2;
+    color: var(--text-color);
+}
+
+#content-display .placeholder {
+    color: #888;
+    font-style: italic;
+    font-family: var(--body-font);
+}
+
+/* 7. Responsive Design */
+@media (max-width: 992px) {
+    .deity-page-container {
+        flex-direction: column;
+    }
+
+    #text-list-container {
+        position: static;
+        width: 100%;
+        margin-bottom: 2rem;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    #text-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* 8. Welcome Page Styling */
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.welcome-header h1 {
+    font-size: 4rem;
+    color: var(--primary-color); 
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0.5rem;
+}
+
+.welcome-header p {
+    font-size: 1.2rem;
+    /* color: #6B4423; */
+    margin-bottom: 3rem;
+}
+
+.start-button {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFAF0;
+    /* Floral white */
+    background-color: var(--primary-color);
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.start-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    background-color: var(--secondary-color);
+    border-color: var(--accent-color);
+}
